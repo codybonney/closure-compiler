@@ -328,14 +328,14 @@ class ProcessClosurePrimitives extends AbstractPostOrderCallback implements HotS
                 break;
               case "require":
               case "requireType":
-                if (validateAliasiablePrimitiveCall(t, n, methodName)) {
+                //if (validateAliasiablePrimitiveCall(t, n, methodName)) {
                   processRequireCall(t, n, parent);
-                }
+                //}
                 break;
               case "provide":
-                if (validateUnaliasablePrimitiveCall(t, n, methodName)) {
+                //if (validateUnaliasablePrimitiveCall(t, n, methodName)) {
                   processProvideCall(t, n, parent);
-                }
+                //}
                 break;
               case "inherits":
                 // Note: inherits is allowed in local scope
